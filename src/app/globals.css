@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+/* Works for modern browsers */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  html, body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+  }
+  .light-p{
+    background-color: #2823c58e;
+    border-radius: 10px;
+    border: 3px solid #ffffff7e;
+  }
+  
