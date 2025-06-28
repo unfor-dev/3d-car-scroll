@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Montserrat } from 'next/font/google';
-import ClientLayout from './components/ClientLayout'; // Client-side layout import qilinadi
 
 const roboto = Montserrat({
   weight: '400',
@@ -20,8 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} antialiased`}>
-        <ClientLayout>{children}</ClientLayout>
+      <body>
+        <h1>Mercedes-Benz Brabus</h1>
       </body>
     </html>
   );
