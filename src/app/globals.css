@@ -1,120 +1,150 @@
 @import "tailwindcss";
 
-
-/* Works for modern browsers */
+/* Scrollbar styles */
 ::-webkit-scrollbar {
-    display: none;
-  }
-  
-  html, body {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer/Edge */
-  }
-  .light-p{
-    background-color: #2823c58e;
-    border-radius: 10px;
-    border: 3px solid #ffffff7e;
-  }
+  display: none;
+}
 
-  .header {
-    background-color: rgba(97, 97, 180, 0.544);
-    border-bottom: 2px solid rgb(177, 208, 228);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
 
-  
-  .header-container {
-    height: 90px;
-  }
+/* Global elements */
+.light-p {
+  background-color: #2823c58e;
+  border-radius: 10px;
+  border: 3px solid #ffffff7e;
+}
 
-  .music-button {
-    padding: 4px 14px;
-    transition: 0.2s ease;
-  }
+/* Header styles */
+.header {
+  background-color: rgba(97, 97, 180, 0.544);
+  border-bottom: 2px solid rgb(177, 208, 228);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
-  .music-button:hover {
-    background-color: rgba(255, 255, 255, 0.441);
-  }
+.header-container {
+  height: 90px;
+}
 
-  .header-list {
-    font-size: 15px;
-  }
-  .car-power-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -100px;
-    }
+.header-img {
+  width: 170px;
+  height: auto;
+}
 
-  .car-power{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    color: white;
-    backdrop-filter: blur(13.1px);
-  }
-  .car-power-info{ 
-    width: 40%;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  .car-power-info h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  .car-power-info p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  .car-power-stats{
-    width: 30%;
-    padding: 20px;
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
-  }
-  .car-power-stats p{
-    font-size: 14px;
-    margin: 10px 0;
-    border: 1px solid white;
-    border-radius: 16px;
-    backdrop-filter: blur(13.1px);
-    padding: 14px;
-    transition: all 0.5s ease;
-    color: red;
-  }
-  .car-power-stats p strong {
-    font-size: 20px;
-    color: white;
-  }
-  .footer {
-    background-color: rgba(63, 63, 196, 0.544);
-    border-top: 2px solid rgb(177, 208, 228);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  @media (max-width: 660px) {
-    .header-list {
-      font-size: 13px;
-    }
-    .header-container {
-      height: 70px;
-    }
-    .header-img {
-      width: 130px;
-      height: auto;
-    }
-    .music-button{
-      font-size: 12px;
-    }
-  }
-  @media (max-width: 540px) {
-    .header-list {
-      display: none;
-    }
-  }
+.header-list {
+  font-size: 15px;
+}
 
+.music-button {
+  padding: 4px 14px;
+  transition: 0.2s ease;
+}
+
+.music-button:hover {
+  background-color: rgba(255, 255, 255, 0.441);
+}
+
+/* Car info sections */
+.header-car-info-wrapper {
+  margin-top: -45px;
+}
+
+.car-info {
+  backdrop-filter: blur(13.1px);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  width: 100%;
+}
+
+/* Power section */
+.car-power-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+}
+
+.car-power {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  color: white;
+  backdrop-filter: blur(13.1px);
+}
+
+.car-power-info {
+  margin: 0 5px;
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(33.1px);
+}
+
+.car-power-info h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.car-power-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.car-power-stats {
+  width: 30%;
+  padding: 20px;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.car-power-stats p {
+  font-size: 14px;
+  margin: 10px 0;
+  border: 1px solid white;
+  border-radius: 16px;
+  backdrop-filter: blur(13.1px);
+  padding: 14px;
+  transition: all 0.5s ease;
+  color: red;
+}
+
+.car-power-stats p strong {
+  font-size: 20px;
+  color: white;
+}
+
+/* Page sections */
+.page-4-h1 {
+  font-size: 6rem;
+}
+
+.page-power-wrapper {
+  height: 50vh;
+}
+
+.page-final-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer styles */
+.footer {
+  background-color: rgba(63, 63, 196, 0.544);
+  border-top: 2px solid rgb(177, 208, 228);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Image container styles */
 .imgContainer {
   height: 300vh;
   position: relative;
@@ -147,6 +177,7 @@
   object-fit: cover;
 }
 
+/* Specific image positions */
 .imgContainer .sticky .el:nth-of-type(2) .imageContainer {
   top: -30vh;
   left: 5vw;
@@ -186,4 +217,104 @@
   left: 25vw;
   width: 15vw;
   height: 15vh;
+}
+
+/* Media queries */
+@media (max-width: 820px) {
+  .car-power-info {
+    width: 70%;
+  }
+}
+
+@media (max-width: 660px) {
+  .header-list {
+    font-size: 13px;
+  }
+  
+  .header-container {
+    height: 70px;
+  }
+  
+  .header-img {
+    width: 130px;
+  }
+  
+  .music-button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .car-power {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .car-power-info {
+    width: 100%;
+  }
+  
+  .car-power-stats {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: none;
+    border-left: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .car-power-stats p {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .header-car-info-wrapper h1 {
+    font-size: 4rem;
+  }
+  
+  .header-car-info-wrapper h4 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    margin-top: -100px;
+  }
+  
+  .page-4-h1 {
+    font-size: 3rem;
+  }
+  
+  .page-power-wrapper {
+    height: 40vh;
+  }
+  
+  .page-power-wrapper h1 {
+    font-size: 57px;
+    margin-bottom: 5px;
+  }
+  
+  .page-power-wrapper h4 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header-list {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  .page-final-wrapper h1 {
+    font-size: 15px;
+  }
+  
+  .page-final-wrapper h4 {
+    font-size: 20px;
+  }
 }

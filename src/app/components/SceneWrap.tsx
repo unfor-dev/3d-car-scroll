@@ -7,7 +7,6 @@ const SceneWrap = () => {
     return (
         
         <Canvas shadows >
-            <fogExp2 attach="fog" color="black" density={0.1} />
             <Scene />
         </Canvas>
     )
